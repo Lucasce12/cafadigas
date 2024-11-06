@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ChevronDown, Facebook, Twitter, Linkedin, Users, Briefcase, Shield, Leaf, Award } from 'lucide-react'
+import { ChevronDown, Facebook, Twitter, Linkedin, Users, Briefcase, Shield, Leaf } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Logo from "@/app/logo.png"
@@ -47,7 +47,7 @@ const partners = [
 ]
 
 export default function Component() {
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
+  const setMobileMenuOpen = React.useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
   return (
